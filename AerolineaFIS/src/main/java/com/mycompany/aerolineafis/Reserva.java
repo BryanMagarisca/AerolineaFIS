@@ -15,19 +15,14 @@ public class Reserva {
         this.vuelo = vuelo;
     }
 
-    // Getters para que GestionDatos pueda escribir en el archivo
     public String getCodigoReserva() { return codigoReserva; }
     public Pasajero getPasajero() { return pasajero; }
     public Vuelo getVuelo() { return vuelo; }
 
     @Override
     public String toString() {
-        // Guardamos solo los IDs para cumplir con el formato de base de datos plana
         // Formato: COD_RESERVA, FECHA, ESTADO, ID_PASAJERO, COD_VUELO
-        return codigoReserva + "," + 
-               fechaReserva + "," + 
-               estadoPago + "," + 
-               pasajero.getIdentificacion() + "," + 
-               vuelo.getCodigoVuelo();
+        return codigoReserva + "," + fechaReserva + "," + estadoPago + "," + pasajero.getIdentificacion() + "," + vuelo.getCodigoVuelo();
     }
+
 }
