@@ -17,7 +17,6 @@ public class LectorArchivos {
             while ((linea = br.readLine()) != null) {
                 String[] d = linea.split(",");
                 // Formato esperado: COD, MODELO, FILAS, COLUMNAS, ESTADO, MAPA_ASIENTOS
-                // Ejemplo: A01,Boeing 737,10,6,Disponible,000111000...
                 
                 int filas = Integer.parseInt(d[2]);
                 int columnas = Integer.parseInt(d[3]);
@@ -68,4 +67,5 @@ public class LectorArchivos {
         }
         return lineas;
     }
+
 }
