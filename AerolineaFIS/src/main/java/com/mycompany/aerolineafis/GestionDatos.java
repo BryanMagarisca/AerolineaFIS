@@ -11,7 +11,6 @@ public class GestionDatos {
 
     public GestionDatos() {
         this.lector = new LectorArchivos();
-        // Definición de archivos en la carpeta 'datos'
         this.archivoAviones = new File("datos/aviones.txt");
         this.archivoRutas = new File("datos/rutas.txt");
         this.archivoReservas = new File("datos/reservas.txt");
@@ -31,7 +30,7 @@ public class GestionDatos {
         }
     }
 
-    // Métodos de Carga (Delegando al lector)
+    // Métodos de Carga 
     public List<Avion> cargarAviones() throws IOException {
         return lector.leerAviones(archivoAviones.getPath());
     }
@@ -41,11 +40,11 @@ public class GestionDatos {
     }
 
     public boolean guardarReserva(Reserva r) {
-        // Usamos el archivo 'datos/reservas.txt' definido en tu constructor
+        // Usamos el archivo 'datos/reservas.txt' definido en el constructor
         try (FileWriter fw = new FileWriter(archivoReservas, true);
              BufferedWriter bw = new BufferedWriter(fw)) {
 
-            bw.write(r.toString()); // Usa el toString que definimos arriba
+            bw.write(r.toString()); // Usa el toString, parecido al mapa donde para guardar la reserva
             bw.newLine();
             return true;
         } catch (IOException e) {
@@ -57,4 +56,5 @@ public class GestionDatos {
     public boolean validarAsientos(Vuelo vuelo, int cantidadSolicitada) {
         return cantidadSolicitada <= vuelo.getAvion().getCapacidad();
     }
+
 }
