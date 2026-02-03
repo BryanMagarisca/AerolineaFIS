@@ -51,17 +51,17 @@ public class Avion {
         return false;
     }
 
-    // --- GETTERS CORREGIDOS ---
     public String getCodigoAvion() { return codigoAvion; }
-    public String getModelo() { return modelo; } // Agregado
-    public String getEstado() { return estado; } // Agregado
+    public String getModelo() { return modelo; } 
+    public String getEstado() { return estado; } 
     public int getFilas() { return filas; }
     public int getColumnas() { return columnas; }
     public int getCapacidad() { return filas * columnas; }
     
     @Override
     public String toString() {
-        // Formato para el archivo txt: COD,MODELO,FILAS,COLUMNAS,ESTADO,MAPA
+        // Formato para el archivo txt: COD,MODELO,FILAS,COLUMNAS,ESTADO,MAPA (donde mapa es un string en binario que muestra los asientos ocupados o vacios)
         return codigoAvion + "," + modelo + "," + filas + "," + columnas + "," + estado + "," + getMapaAsientosComoString();
     }
+
 }
