@@ -13,7 +13,6 @@ public class Pasajero {
         this.telefono = telefono;
     }
 
-    // Getters necesarios para el guardado en archivos
     public String getIdentificacion() { return numeroIdentificacion; }
     public String getNombre() { return nombresCompletos; }
 
@@ -22,4 +21,5 @@ public class Pasajero {
         // Formato para el archivo .txt
         return numeroIdentificacion + "," + nombresCompletos + "," + correoElectronico + "," + telefono;
     }
+
 }
