@@ -1,0 +1,9 @@
+com\mycompany\aerolineafis\AerolineaFIS.class
+com\mycompany\aerolineafis\LectorArchivos.class
+com\mycompany\aerolineafis\Aerolinea.class
+com\mycompany\aerolineafis\GestionDatos.class
+com\mycompany\aerolineafis\Reserva.class
+com\mycompany\aerolineafis\Ruta.class
+com\mycompany\aerolineafis\Avion.class
+com\mycompany\aerolineafis\Vuelo.class
+com\mycompany\aerolineafis\Pasajero.class

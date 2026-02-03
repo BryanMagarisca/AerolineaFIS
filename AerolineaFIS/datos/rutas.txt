@@ -1,0 +1,4 @@
+R001,Quito,Guayaquil,65.00,50
+R002,Quito,Cuenca,55.00,45
+R003,Guayaquil,Galapagos,120.00,100
+R004,Manta,Quito,40.00,40
